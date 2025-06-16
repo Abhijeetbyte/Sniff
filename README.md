@@ -20,6 +20,16 @@ These issues contribute to unsanitary conditions, making public toilets unpleasa
 * mq135 - Air Quality (CO2) 
 * mq136 - H2S (Hydrogen Sulfide) 
 * mq137 - NH3 (Ammonia)
+* BME280 - Temp + Humidity + Pressure
+
+Note: MQ series datasheet often includes correction curves for various humidity levels (e.g., 33%, 85%) at 20°C.
+| Feature                      | Without Temp/Humid | With Temp/Humid |
+| ---------------------------- | ------------------ | --------------- |
+| Raw gas detection            | ✅                  | ✅               |
+| Accurate ppm estimation      | ❌                  | ✅               |
+| Environmental robustness     | ❌                  | ✅               |
+| Scientific or industrial use | ❌                  | ✅               |
+
 
 ### MCU
   * ESP 32
